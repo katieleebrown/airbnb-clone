@@ -1,17 +1,15 @@
-import cardImage from './images/katieZaferes.png'
-
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="cardHolder">
             <div className="card">
-                <img src={cardImage} />
+                <img src={props.img} alt='event' />
                 <div className='cardStats'>
                     <i class="fa-solid fa-star"></i>
-                    <span>5.0</span>
-                    <span className='muted'>&#40;6&#41; &#183; USA</span>
+                    <span>{props.rating}</span>
+                    <span className='muted'>&#40;{props.reviewCount}&#41; &#183; {props.country}</span>
                 </div>
-                <p>Life lessons with Katie Zaferes</p>
-                <p><strong>From $136</strong> / person</p>
+                <p>{props.title}</p>
+                <p><strong>From ${props.price}</strong> / person</p>
             </div>
         </div>
     )
