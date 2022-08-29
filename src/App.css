@@ -103,6 +103,20 @@ nav>img {
   font-size: .9rem;
 }
 
+.badge {
+  position: absolute;
+  background-color: white;
+  border-radius: 5%;
+  margin: 1.5%;
+  padding: .5% 1%;
+}
+
+.badge>h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
 /* Media Screens / Responsive Code */
 @media screen and (max-width: 1160px) {
   .card {
