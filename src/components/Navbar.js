@@ -1,4 +1,4 @@
-import logo from './images/logo.png'
+let logo = '../../images/logo.png'
 
 export default function Navbar() {
     return (

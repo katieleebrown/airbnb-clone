@@ -1,4 +1,4 @@
-import heroImage from './images/heroImages.png'
+let heroImage = '../../images/heroImages.png'
 
 export default function Hero() {
     return (
